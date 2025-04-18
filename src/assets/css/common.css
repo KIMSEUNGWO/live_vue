@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'Pretendard';
+    src: url(../fonts/Pretendard-Light.otf) format('opentype');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url(../fonts/Pretendard-Regular.otf) format('opentype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url(../fonts/Pretendard-Medium.otf) format('opentype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url(../fonts/Pretendard-SemiBold.otf) format('opentype');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url(../fonts/Pretendard-Bold.otf) format('opentype');
+    font-weight: 700;
+}
+
+
+:root {
+    --main-color: #00FA9A;
+    --main-color-hover: #00da86;
+    --background-color: #1C1D1F;
+    --box-color: #27292B;
+
+    --f1: #FFFFFF;
+    --f2: #DFE2EA;
+    --f3: #C9CEDC;
+    --f4: #9DA5B6;
+
+    --fs-21: 21px;
+    --fs-16: 16px;
+    --fs-14: 14px;
+    --fs-12: 12px;
+    --fs-10: 10px;
+
+    --red: #FF2B2B;
+
+    --input-bg: #141414;
+    --input-border-color: #333;
+}
+
+*{
+    font-family: 'Pretendard', serif;
+    font-weight: 400;
+    box-sizing: border-box;
+    margin: 0;
+    color: var(--f3);
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+h1, h2, h3, h4, h5, h6, span, a {
+    line-height: 140%;
+}
+
+#container {
+    display: flex;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+
+/* Chrome, Safari, Edge, Opera에서 화살표 제거 */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox에서 화살표 제거 */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+
+
+
+.v-size {
+    aspect-ratio: 16 / 9;
+    border-radius: 16px;
+}
+.p-btn {
+    border-radius: 8px;
+    background-color: var(--main-color);
+}
+.p-btn:hover {
+    background-color: var(--main-color-hover);
+}
+.hidden {
+    display: none;
+}
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-text {
+    background-color: var(--input-bg);
+    border: 1px var(--input-border-color) solid;
+    border-radius: 8px;
+    outline: none;
+    padding: 0 15px;
+}
